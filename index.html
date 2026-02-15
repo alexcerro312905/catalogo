@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Catálogo de Productos</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -47,7 +48,7 @@
             border-radius: 8px;
         }
         .producto img {
-            max-width: 100%;
+            width: 100%;
             border-radius: 6px;
         }
         .precio {
@@ -63,6 +64,7 @@
             color: white;
             text-decoration: none;
             border-radius: 6px;
+            font-weight: bold;
         }
     </style>
 </head>
@@ -71,7 +73,7 @@
 
 <header>
     <h1>Catálogo de Productos</h1>
-    <p>Refrigeración, Muebles y Electrodomésticos</p>
+    <p>Refrigeración Comercial, Muebles y Electrodomésticos</p>
 </header>
 
 <nav>
@@ -81,28 +83,42 @@
     <button onclick="mostrar('electro')">Electrodomésticos</button>
 </nav>
 
+<!-- ================= REFRIGERACIÓN ================= -->
 <section id="refrigeracion" class="active">
     <h2>Refrigeración Comercial</h2>
 
     <div class="producto">
         <h3>Vitrina Exhibidora Vertical</h3>
-        <img src="https://via.placeholder.com/400x250">
-        <p>Ideal para negocios, bajo consumo, excelente visibilidad.</p>
+
+        <!-- AQUÍ VA TU FOTO REAL -->
+        <img src="Imágenes/Travitrinas/vitrina1.jpg" alt="Vitrina Exhibidora Vertical">
+
+        <ul>
+            <li>Ideal para negocios y minimercados</li>
+            <li>Excelente visibilidad del producto</li>
+            <li>Iluminación LED interna</li>
+            <li>Puerta en vidrio templado</li>
+            <li>Control de temperatura ajustable</li>
+            <li>Bajo consumo energético</li>
+        </ul>
+
         <p class="precio">$3.200.000 contado</p>
-        <a class="btn-whatsapp" 
-           href="https://wa.me/573104291445?text=Hola,%20quiero%20cotizar%20la%20vitrina%20exhibidora%20vertical">
+
+        <a class="btn-whatsapp"
+           href="https://wa.me/573104291445?text=Hola,%20me%20interesa%20la%20vitrina%20exhibidora%20vertical">
            Cotizar por WhatsApp
         </a>
     </div>
 </section>
 
+<!-- ================= MUEBLES ================= -->
 <section id="muebles">
     <h2>Muebles</h2>
 
     <div class="producto">
         <h3>Juego de Sala</h3>
-        <img src="https://via.placeholder.com/400x250">
-        <p>Diseño moderno, alta resistencia.</p>
+        <img src="https://via.placeholder.com/400x250" alt="Juego de Sala">
+        <p>Diseño moderno y alta resistencia.</p>
         <p class="precio">$2.500.000 contado</p>
         <a class="btn-whatsapp"
            href="https://wa.me/573104291445?text=Hola,%20quiero%20información%20del%20juego%20de%20sala">
@@ -111,12 +127,13 @@
     </div>
 </section>
 
+<!-- ================= COLCHONES ================= -->
 <section id="colchones">
     <h2>Colchones Spring</h2>
 
     <div class="producto">
         <h3>Colchón Spring Doble</h3>
-        <img src="https://via.placeholder.com/400x250">
+        <img src="https://via.placeholder.com/400x250" alt="Colchón Spring">
         <p>Confort y durabilidad garantizada.</p>
         <p class="precio">$1.800.000 contado</p>
         <a class="btn-whatsapp"
@@ -126,12 +143,13 @@
     </div>
 </section>
 
+<!-- ================= ELECTRODOMÉSTICOS ================= -->
 <section id="electro">
     <h2>Electrodomésticos</h2>
 
     <div class="producto">
         <h3>Lavadora Automática Mabe</h3>
-        <img src="https://via.placeholder.com/400x250">
+        <img src="https://via.placeholder.com/400x250" alt="Lavadora Mabe">
         <p>Alta eficiencia y ahorro de agua.</p>
         <p class="precio">$2.200.000 contado</p>
         <a class="btn-whatsapp"
