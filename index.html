@@ -1,27 +1,165 @@
-<div class="producto">
-    <h3>Refrigerador Vertical FORTE V40</h3>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Catálogo de Productos</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <img src="imagenes/forte-v40.jpg" alt="Refrigerador Vertical FORTE V40">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f4f6f9;
+        }
 
-    <p><strong>Capacidad bruta:</strong> 1.093 litros</p>
+        header {
+            background: #0b5ed7;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
 
-    <ul>
-        <li>Control digital de temperatura</li>
-        <li>Condensador de laminilla (tubería 100% cobre)</li>
-        <li>Puertas de doble cristal templado Low-E con gas Argón</li>
-        <li>Iluminación LED interior</li>
-        <li>Rejilla frontal termoformada (plástico resistente)</li>
-        <li>Gas refrigerante R-290 (ecológico)</li>
-        <li>Temperatura de trabajo: 0°C a 4°C</li>
-        <li>Potencia del compresor: 1/2 HP</li>
-        <li>Incluye: 12 parrillas y 48 ganchos</li>
-        <li>Garantía: 2 años</li>
-    </ul>
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background: #ffffff;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
 
-    <p class="precio">$ 9.074.000 contado</p>
+        nav button {
+            border: none;
+            background: none;
+            padding: 15px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
 
-    <a class="btn-whatsapp"
-       href="https://wa.me/573104291445?text=Hola,%20quiero%20cotizar%20el%20Refrigerador%20Vertical%20FORTE%20V40">
-       Cotizar por WhatsApp
-    </a>
-</div>
+        nav button:hover {
+            background: #e9ecef;
+        }
+
+        section {
+            display: none;
+            padding: 20px;
+        }
+
+        section.active {
+            display: block;
+        }
+
+        .producto {
+            background: white;
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        }
+
+        .producto img {
+            width: 100%;
+            max-width: 420px;
+            border-radius: 8px;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .precio {
+            color: #198754;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .btn-whatsapp {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 12px 18px;
+            background: #25D366;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Catálogo de Productos</h1>
+    <p>Refrigeración, Muebles y Electrodomésticos</p>
+</header>
+
+<nav>
+    <button onclick="mostrar('refrigeracion')">Refrigeración</button>
+    <button onclick="mostrar('muebles')">Muebles</button>
+    <button onclick="mostrar('colchones')">Colchones</button>
+    <button onclick="mostrar('electro')">Electrodomésticos</button>
+</nav>
+
+<!-- REFRIGERACIÓN -->
+<section id="refrigeracion" class="active">
+    <h2>Refrigeración Comercial</h2>
+
+    <div class="producto">
+        <h3>Vitrina Exhibidora Vertical – FORTE V40</h3>
+
+        <img src="imagenes/vitrina1.jpg" alt="Vitrina exhibidora vertical FORTE V40">
+
+        <p><strong>Capacidad bruta:</strong> 1.093 litros</p>
+
+        <ul>
+            <li>Control digital de temperatura</li>
+            <li>Condensador de laminilla (tubería 100% cobre)</li>
+            <li>Puertas de doble cristal templado Low-E con gas Argón</li>
+            <li>Iluminación LED interior</li>
+            <li>Rejilla frontal termoformada</li>
+            <li>Gas refrigerante R-290 (ecológico)</li>
+            <li>Rango de temperatura: 0°C a 4°C</li>
+            <li>Potencia del compresor: 1/2 HP</li>
+            <li>Incluye 12 parrillas y 48 ganchos</li>
+            <li>Garantía: 2 años</li>
+        </ul>
+
+        <p class="precio">$ 9.074.000 contado</p>
+
+        <a class="btn-whatsapp"
+           href="https://wa.me/573104291445?text=Hola,%20quiero%20cotizar%20la%20vitrina%20FORTE%20V40%20de%201093%20litros">
+           Cotizar por WhatsApp
+        </a>
+    </div>
+</section>
+
+<!-- MUEBLES -->
+<section id="muebles">
+    <h2>Muebles</h2>
+    <p>Próximamente catálogo de muebles.</p>
+</section>
+
+<!-- COLCHONES -->
+<section id="colchones">
+    <h2>Colchones</h2>
+    <p>Próximamente catálogo de colchones.</p>
+</section>
+
+<!-- ELECTRODOMÉSTICOS -->
+<section id="electro">
+    <h2>Electrodomésticos</h2>
+    <p>Próximamente catálogo de electrodomésticos.</p>
+</section>
+
+<script>
+function mostrar(id) {
+    document.querySelectorAll("section").forEach(seccion => {
+        seccion.classList.remove("active");
+    });
+    document.getElementById(id).classList.add("active");
+}
+</script>
+
+</body>
+</html>
