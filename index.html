@@ -8,68 +8,109 @@
 
 <style>
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    background:#f4f6f8;
     margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background:#f2f4f7;
 }
 
+/* ENCABEZADO */
 header{
-    background:#0a4fa3;
-    color:white;
-    padding:25px 15px;
+    background:#0b4fa2;
+    color:#fff;
+    padding:30px 15px;
     text-align:center;
 }
 
-.contenedor{
-    max-width:900px;
-    margin:20px auto;
-    padding:15px;
+header h1{
+    margin:0;
+    font-size:26px;
 }
 
-.producto{
-    background:white;
+header p{
+    margin-top:8px;
+    font-size:16px;
+}
+
+/* CONTENEDOR */
+.container{
+    max-width:1000px;
+    margin:auto;
+    padding:20px;
+}
+
+/* TARJETA PRODUCTO */
+.product{
+    background:#fff;
     border-radius:12px;
     padding:20px;
-    margin-bottom:20px;
-    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    box-shadow:0 6px 15px rgba(0,0,0,0.12);
+}
+
+/* TITULO */
+.product h2{
+    color:#0b4fa2;
     text-align:center;
-}
-
-.producto img{
-    width:100%;
-    max-width:280px; /* TAMAÑO MEDIANO */
-    height:auto;
-    margin:10px auto 15px;
-    display:block;
-    border-radius:8px;
-}
-
-.producto h2{
-    color:#0a4fa3;
     margin-bottom:10px;
 }
 
-.precio{
-    font-size:22px;
-    color:#1a7f37;
+/* IMAGEN */
+.product img{
+    display:block;
+    width:100%;
+    max-width:320px; /* tamaño mediano */
+    margin:15px auto;
+    border-radius:8px;
+}
+
+/* PRECIO */
+.price{
+    text-align:center;
+    font-size:24px;
     font-weight:bold;
-    margin:10px 0;
+    color:#1e7e34;
+    margin:15px 0;
 }
 
+/* SECCIONES */
+.section{
+    margin-top:20px;
+}
+
+.section h3{
+    color:#0b4fa2;
+    margin-bottom:8px;
+}
+
+/* LISTAS */
 ul{
-    text-align:left;
     padding-left:20px;
+    margin:0;
 }
 
-.boton{
-    display:inline-block;
-    margin-top:15px;
-    padding:12px 20px;
-    background:#0a4fa3;
+ul li{
+    margin-bottom:6px;
+}
+
+/* BOTONES */
+.buttons{
+    margin-top:25px;
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.btn{
+    background:#0b4fa2;
     color:white;
     text-decoration:none;
+    padding:12px 20px;
     border-radius:8px;
     font-size:16px;
+}
+
+.btn.secondary{
+    background:#198754;
 }
 </style>
 </head>
@@ -81,37 +122,69 @@ ul{
     <p>Asesor: Alex Cerro</p>
 </header>
 
-<div class="contenedor">
+<div class="container">
 
-    <div class="producto">
+<div class="product">
 
-        <!-- IMAGEN -->
-        <img src="imagenes/vitrina1.jpg" alt="Vitrina Exhibidora Refrigerada">
+    <h2>FORTE V40 – Refrigerador Vertical</h2>
 
-        <!-- NOMBRE -->
-        <h2>Vitrina Exhibidora Refrigerada</h2>
+    <!-- IMAGEN -->
+    <img src="imagenes/forte-v40.jpg" alt="FORTE V40">
 
-        <!-- PRECIO -->
-        <div class="precio">
-            Precio: $3.450.000
-        </div>
+    <!-- PRECIO -->
+    <div class="price">
+        Precio contado: $9.074.000
+    </div>
 
-        <!-- CARACTERÍSTICAS -->
+    <!-- DESCRIPCIÓN -->
+    <div class="section">
+        <h3>Características principales</h3>
         <ul>
-            <li>Vidrio templado de alta resistencia</li>
+            <li>Vitrina exhibidora de tres puertas</li>
+            <li>Control digital de temperatura</li>
+            <li>Condensador de lámina con tubería 100% cobre</li>
+            <li>Puertas con doble vidrio templado y gas Argón</li>
             <li>Iluminación LED interna</li>
-            <li>Refrigeración uniforme</li>
-            <li>Bajo consumo energético</li>
-            <li>Ideal para tiendas y restaurantes</li>
+            <li>Rejilla frontal termoformada</li>
         </ul>
+    </div>
 
-        <!-- BOTÓN -->
-        <a class="boton" href="https://wa.me/57XXXXXXXXXX">
+    <!-- ESPECIFICACIONES -->
+    <div class="section">
+        <h3>Especificaciones técnicas</h3>
+        <ul>
+            <li>Capacidad bruta: 1.093 litros</li>
+            <li>Temperatura de trabajo: 0°C a 4°C</li>
+            <li>Gas refrigerante: R-290</li>
+            <li>Potencia del compresor: 1/2 HP</li>
+            <li>Consumo de energía: 195.7 kWh/mes</li>
+            <li>Iluminación: Tecnología LED</li>
+        </ul>
+    </div>
+
+    <!-- USOS -->
+    <div class="section">
+        <h3>Usos recomendados</h3>
+        <ul>
+            <li>Tiendas y supermercados</li>
+            <li>Restaurantes</li>
+            <li>Panaderías</li>
+            <li>Negocios de alimentos y bebidas</li>
+        </ul>
+    </div>
+
+    <!-- BOTONES -->
+    <div class="buttons">
+        <a class="btn" href="https://wa.me/57XXXXXXXXXX">
             Consultar por WhatsApp
         </a>
 
+        <a class="btn secondary" href="#">
+            Volver al catálogo
+        </a>
     </div>
 
+</div>
 </div>
 
 </body>
