@@ -1,172 +1,27 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <title>Catálogo de Productos</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<div class="producto">
+    <h3>Refrigerador Vertical FORTE V40</h3>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background: #f5f5f5;
-        }
-        header {
-            background: #0b5ed7;
-            color: white;
-            padding: 15px;
-            text-align: center;
-        }
-        nav {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            background: #ffffff;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        nav button {
-            border: none;
-            background: none;
-            padding: 15px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-        nav button:hover {
-            background: #e9ecef;
-        }
-        section {
-            display: none;
-            padding: 20px;
-        }
-        section.active {
-            display: block;
-        }
-        .producto {
-            background: white;
-            margin-bottom: 15px;
-            padding: 15px;
-            border-radius: 8px;
-        }
-        .producto img {
-            width: 100%;
-            border-radius: 6px;
-        }
-        .precio {
-            color: green;
-            font-size: 18px;
-            font-weight: bold;
-        }
-        .btn-whatsapp {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 10px 15px;
-            background: #25D366;
-            color: white;
-            text-decoration: none;
-            border-radius: 6px;
-            font-weight: bold;
-        }
-    </style>
-</head>
+    <img src="imagenes/forte-v40.jpg" alt="Refrigerador Vertical FORTE V40">
 
-<body>
+    <p><strong>Capacidad bruta:</strong> 1.093 litros</p>
 
-<header>
-    <h1>Catálogo de Productos</h1>
-    <p>Refrigeración Comercial, Muebles y Electrodomésticos</p>
-</header>
+    <ul>
+        <li>Control digital de temperatura</li>
+        <li>Condensador de laminilla (tubería 100% cobre)</li>
+        <li>Puertas de doble cristal templado Low-E con gas Argón</li>
+        <li>Iluminación LED interior</li>
+        <li>Rejilla frontal termoformada (plástico resistente)</li>
+        <li>Gas refrigerante R-290 (ecológico)</li>
+        <li>Temperatura de trabajo: 0°C a 4°C</li>
+        <li>Potencia del compresor: 1/2 HP</li>
+        <li>Incluye: 12 parrillas y 48 ganchos</li>
+        <li>Garantía: 2 años</li>
+    </ul>
 
-<nav>
-    <button onclick="mostrar('refrigeracion')">Refrigeración</button>
-    <button onclick="mostrar('muebles')">Muebles</button>
-    <button onclick="mostrar('colchones')">Colchones</button>
-    <button onclick="mostrar('electro')">Electrodomésticos</button>
-</nav>
+    <p class="precio">$ 9.074.000 contado</p>
 
-<!-- ================= REFRIGERACIÓN ================= -->
-<section id="refrigeracion" class="active">
-    <h2>Refrigeración Comercial</h2>
-
-    <div class="producto">
-        <h3>Vitrina Exhibidora Vertical</h3>
-
-        <!-- AQUÍ VA TU FOTO REAL -->
-        <img src="Imágenes/Travitrinas/vitrina1.jpg" alt="Vitrina Exhibidora Vertical">
-
-        <ul>
-            <li>Ideal para negocios y minimercados</li>
-            <li>Excelente visibilidad del producto</li>
-            <li>Iluminación LED interna</li>
-            <li>Puerta en vidrio templado</li>
-            <li>Control de temperatura ajustable</li>
-            <li>Bajo consumo energético</li>
-        </ul>
-
-        <p class="precio">$3.200.000 contado</p>
-
-        <a class="btn-whatsapp"
-           href="https://wa.me/573104291445?text=Hola,%20me%20interesa%20la%20vitrina%20exhibidora%20vertical">
-           Cotizar por WhatsApp
-        </a>
-    </div>
-</section>
-
-<!-- ================= MUEBLES ================= -->
-<section id="muebles">
-    <h2>Muebles</h2>
-
-    <div class="producto">
-        <h3>Juego de Sala</h3>
-        <img src="https://via.placeholder.com/400x250" alt="Juego de Sala">
-        <p>Diseño moderno y alta resistencia.</p>
-        <p class="precio">$2.500.000 contado</p>
-        <a class="btn-whatsapp"
-           href="https://wa.me/573104291445?text=Hola,%20quiero%20información%20del%20juego%20de%20sala">
-           Cotizar por WhatsApp
-        </a>
-    </div>
-</section>
-
-<!-- ================= COLCHONES ================= -->
-<section id="colchones">
-    <h2>Colchones Spring</h2>
-
-    <div class="producto">
-        <h3>Colchón Spring Doble</h3>
-        <img src="https://via.placeholder.com/400x250" alt="Colchón Spring">
-        <p>Confort y durabilidad garantizada.</p>
-        <p class="precio">$1.800.000 contado</p>
-        <a class="btn-whatsapp"
-           href="https://wa.me/573104291445?text=Hola,%20quiero%20cotizar%20el%20colchón%20Spring">
-           Cotizar por WhatsApp
-        </a>
-    </div>
-</section>
-
-<!-- ================= ELECTRODOMÉSTICOS ================= -->
-<section id="electro">
-    <h2>Electrodomésticos</h2>
-
-    <div class="producto">
-        <h3>Lavadora Automática Mabe</h3>
-        <img src="https://via.placeholder.com/400x250" alt="Lavadora Mabe">
-        <p>Alta eficiencia y ahorro de agua.</p>
-        <p class="precio">$2.200.000 contado</p>
-        <a class="btn-whatsapp"
-           href="https://wa.me/573104291445?text=Hola,%20quiero%20información%20de%20la%20lavadora%20Mabe">
-           Cotizar por WhatsApp
-        </a>
-    </div>
-</section>
-
-<script>
-function mostrar(id) {
-    document.querySelectorAll('section').forEach(sec => {
-        sec.classList.remove('active');
-    });
-    document.getElementById(id).classList.add('active');
-}
-</script>
-
-</body>
-</html>
+    <a class="btn-whatsapp"
+       href="https://wa.me/573104291445?text=Hola,%20quiero%20cotizar%20el%20Refrigerador%20Vertical%20FORTE%20V40">
+       Cotizar por WhatsApp
+    </a>
+</div>
