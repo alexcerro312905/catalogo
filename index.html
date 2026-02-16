@@ -8,109 +8,86 @@
 <style>
 body{
     margin:0;
-    font-family: Arial, Helvetica, sans-serif;
-    background:#f2f4f7;
+    font-family: Arial, sans-serif;
+    background:#f2f2f2;
 }
 
-/* ENCABEZADO */
 header{
-    background:#0b4fa2;
-    color:#fff;
-    padding:30px 15px;
+    background:#0b5ed7;
+    color:white;
     text-align:center;
+    padding:20px;
 }
 
 header h1{
     margin:0;
-    font-size:26px;
 }
 
-header p{
-    margin-top:8px;
-    font-size:16px;
-}
-
-/* BOTONES PRINCIPALES */
-.menu{
+nav{
     display:flex;
-    gap:12px;
     justify-content:center;
-    flex-wrap:wrap;
-    padding:20px;
+    gap:10px;
+    padding:15px;
     background:#ffffff;
 }
 
-.menu a{
-    text-decoration:none;
-    background:#0b4fa2;
-    color:#fff;
-    padding:12px 18px;
-    border-radius:8px;
-    font-size:15px;
-}
-
-/* CONTENEDOR */
-.container{
-    max-width:1100px;
-    margin:auto;
-    padding:20px;
-}
-
-/* SECCIONES */
-.section{
-    margin-top:40px;
-}
-
-.section h2{
-    color:#0b4fa2;
-    margin-bottom:20px;
-    text-align:center;
-}
-
-/* PRODUCTOS */
-.products{
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap:20px;
-}
-
-.product{
-    background:#fff;
-    border-radius:12px;
-    padding:15px;
-    box-shadow:0 6px 15px rgba(0,0,0,0.12);
-    text-align:center;
-}
-
-.product img{
-    width:100%;
-    max-width:240px;
-    margin:auto;
-    display:block;
-    border-radius:8px;
-}
-
-.product h3{
-    color:#0b4fa2;
-    margin:12px 0 5px;
-}
-
-.price{
-    font-weight:bold;
-    color:#198754;
-    margin:8px 0;
-}
-
-/* BOTÓN WHATSAPP */
-.btn{
-    display:inline-block;
-    margin-top:10px;
-    background:#198754;
-    color:#fff;
+nav button{
+    background:#0b5ed7;
+    color:white;
+    border:none;
     padding:10px 15px;
     border-radius:8px;
-    text-decoration:none;
     font-size:14px;
+    cursor:pointer;
+}
+
+section{
+    display:none;
+    padding:15px;
+}
+
+section.active{
+    display:block;
+}
+
+.card{
+    background:white;
+    border-radius:12px;
+    padding:15px;
+    margin-bottom:20px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.card img{
+    width:100%;
+    max-width:320px;
+    display:block;
+    margin:auto;
+    border-radius:10px;
+}
+
+.card h3{
+    text-align:center;
+    color:#0b5ed7;
+}
+
+.precio{
+    text-align:center;
+    color:green;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.btn{
+    display:block;
+    margin:15px auto 0;
+    text-align:center;
+    background:#25D366;
+    color:white;
+    padding:12px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
 }
 </style>
 </head>
@@ -122,81 +99,82 @@ header p{
     <p>Asesor: Alex Cerro</p>
 </header>
 
-<!-- BOTONES DE CATEGORÍA -->
-<div class="menu">
-    <a href="#refrigeracion">Refrigeración Comercial</a>
-    <a href="#muebles">Muebles</a>
-    <a href="#electrodomesticos">Electrodomésticos</a>
-</div>
+<nav>
+    <button onclick="mostrar('refrigeracion')">Refrigeración Comercial</button>
+    <button onclick="mostrar('muebles')">Muebles</button>
+    <button onclick="mostrar('electro')">Electrodomésticos</button>
+</nav>
 
-<div class="container">
-
-<!-- ================= REFRIGERACIÓN ================= -->
-<div class="section" id="refrigeracion">
+<!-- REFRIGERACIÓN -->
+<section id="refrigeracion" class="active">
     <h2>Refrigeración Comercial</h2>
 
-    <div class="products">
+    <div class="card">
+        <img src="imagenes/forte-v40.jpg" alt="FORTE V40">
+        <h3>FORTE V40</h3>
+        <p><b>Refrigerador vertical – 3 puertas</b></p>
 
-        <!-- PRODUCTO 1 -->
-        <div class="product">
-            <img src="imagenes/forte-v40.jpg" alt="FORTE V40">
-            <h3>FORTE V40</h3>
-            <p>Refrigerador vertical – 3 puertas</p>
-            <div class="price">$9.074.000</div>
-            <a class="btn" href="https://wa.me/57XXXXXXXXXX">
-                Consultar por WhatsApp
-            </a>
-        </div>
+        <ul>
+            <li>Capacidad bruta: 1.093 litros</li>
+            <li>Control digital de temperatura</li>
+            <li>Condensador de laminilla (100% cobre)</li>
+            <li>Puertas en vidrio templado Low-E con gas Argón</li>
+            <li>Iluminación LED interior</li>
+            <li>Rejilla frontal termoformada</li>
+            <li>Gas refrigerante R-290 ecológico</li>
+            <li>Temperatura de trabajo: 0°C a 4°C</li>
+            <li>Potencia del compresor: 1/2 HP</li>
+            <li>Incluye 12 parrillas y 48 ganchos</li>
+            <li>Garantía: 2 años</li>
+        </ul>
 
-        <!-- PRODUCTO 2 -->
-        <div class="product">
-            <img src="imagenes/vitrina2.jpg" alt="Vitrina Refrigerada">
-            <h3>Vitrina Refrigerada</h3>
-            <p>Ideal para exhibición</p>
-            <div class="price">Precio a consultar</div>
-            <a class="btn" href="https://wa.me/57XXXXXXXXXX">
-                Consultar por WhatsApp
-            </a>
-        </div>
+        <p class="precio">$9.074.000 contado</p>
 
+        <a class="btn"
+        href="https://wa.me/573104291445?text=Hola,%20estoy%20interesado%20en%20el%20refrigerador%20FORTE%20V40">
+        Consultar por WhatsApp
+        </a>
     </div>
-</div>
+</section>
 
-<!-- ================= MUEBLES ================= -->
-<div class="section" id="muebles">
+<!-- MUEBLES -->
+<section id="muebles">
     <h2>Muebles</h2>
 
-    <div class="products">
-        <div class="product">
-            <img src="imagenes/mueble1.jpg" alt="Mueble">
-            <h3>Mueble Comercial</h3>
-            <p>Resistente y funcional</p>
-            <div class="price">Precio a consultar</div>
-            <a class="btn" href="https://wa.me/57XXXXXXXXXX">
-                Consultar por WhatsApp
-            </a>
-        </div>
-    </div>
-</div>
+    <div class="card">
+        <h3>Mueble Comercial</h3>
+        <p>Resistente y funcional</p>
+        <p class="precio">Precio a consultar</p>
 
-<!-- ================= ELECTRODOMÉSTICOS ================= -->
-<div class="section" id="electrodomesticos">
+        <a class="btn"
+        href="https://wa.me/573104291445?text=Hola,%20quiero%20información%20sobre%20muebles%20comerciales">
+        Consultar por WhatsApp
+        </a>
+    </div>
+</section>
+
+<!-- ELECTRODOMÉSTICOS -->
+<section id="electro">
     <h2>Electrodomésticos</h2>
 
-    <div class="products">
-        <div class="product">
-            <img src="imagenes/electro1.jpg" alt="Electrodoméstico">
-            <h3>Electrodoméstico</h3>
-            <p>Alta eficiencia</p>
-            <div class="price">Precio a consultar</div>
-            <a class="btn" href="https://wa.me/57XXXXXXXXXX">
-                Consultar por WhatsApp
-            </a>
-        </div>
-    </div>
-</div>
+    <div class="card">
+        <h3>Electrodoméstico</h3>
+        <p>Alta eficiencia</p>
+        <p class="precio">Precio a consultar</p>
 
-</div>
+        <a class="btn"
+        href="https://wa.me/573104291445?text=Hola,%20quiero%20información%20sobre%20electrodomésticos">
+        Consultar por WhatsApp
+        </a>
+    </div>
+</section>
+
+<script>
+function mostrar(id){
+    document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+}
+</script>
 
 </body>
 </html>
