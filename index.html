@@ -11,18 +11,12 @@ body{
     font-family: Arial, sans-serif;
     background:#f2f2f2;
 }
-
 header{
     background:#0b5ed7;
     color:white;
     text-align:center;
     padding:20px;
 }
-
-header h1{
-    margin:0;
-}
-
 nav{
     display:flex;
     justify-content:center;
@@ -30,7 +24,6 @@ nav{
     padding:15px;
     background:#ffffff;
 }
-
 nav button{
     background:#0b5ed7;
     color:white;
@@ -40,16 +33,13 @@ nav button{
     font-size:14px;
     cursor:pointer;
 }
-
 section{
     display:none;
     padding:15px;
 }
-
 section.active{
     display:block;
 }
-
 .card{
     background:white;
     border-radius:12px;
@@ -57,7 +47,6 @@ section.active{
     margin-bottom:20px;
     box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
-
 .card img{
     width:100%;
     max-width:320px;
@@ -65,19 +54,16 @@ section.active{
     margin:auto;
     border-radius:10px;
 }
-
 .card h3{
     text-align:center;
     color:#0b5ed7;
 }
-
 .precio{
     text-align:center;
     color:green;
     font-size:18px;
     font-weight:bold;
 }
-
 .btn{
     display:block;
     margin:15px auto 0;
@@ -105,74 +91,116 @@ section.active{
     <button onclick="mostrar('electro')">Electrodomésticos</button>
 </nav>
 
-<!-- REFRIGERACIÓN -->
 <section id="refrigeracion" class="active">
-    <h2>Refrigeración Comercial</h2>
+<h2>Refrigeración Comercial – INDUFRIAL</h2>
 
-    <div class="card">
-        <img src="imagenes/forte-v40.jpg" alt="FORTE V40">
-        <h3>FORTE V40</h3>
-        <p><b>Refrigerador vertical – 3 puertas</b></p>
+<!-- FORTE V40 -->
+<div class="card">
+<img src="imagenes/forte-v40.jpg">
+<h3>FORTE V40 – INDUFRIAL</h3>
+<ul>
+<li>Refrigerador vertical – 3 puertas</li>
+<li>Capacidad bruta: 1.093 litros</li>
+<li>Control digital de temperatura</li>
+<li>Condensador 100% cobre</li>
+<li>Iluminación LED</li>
+<li>Gas R-290 ecológico</li>
+<li>Temperatura: 0°C a 4°C</li>
+<li>Compresor: 1/2 HP</li>
+<li>Garantía: 2 años</li>
+</ul>
+<p class="precio">$9.074.000 contado</p>
+<a class="btn" href="https://wa.me/573104291445?text=Hola,%20estoy%20interesado%20en%20el%20FORTE%20V40">Consultar por WhatsApp</a>
+</div>
 
-        <ul>
-            <li>Capacidad bruta: 1.093 litros</li>
-            <li>Control digital de temperatura</li>
-            <li>Condensador de laminilla (100% cobre)</li>
-            <li>Puertas en vidrio templado Low-E con gas Argón</li>
-            <li>Iluminación LED interior</li>
-            <li>Rejilla frontal termoformada</li>
-            <li>Gas refrigerante R-290 ecológico</li>
-            <li>Temperatura de trabajo: 0°C a 4°C</li>
-            <li>Potencia del compresor: 1/2 HP</li>
-            <li>Incluye 12 parrillas y 48 ganchos</li>
-            <li>Garantía: 2 años</li>
-        </ul>
+<!-- FORTE V25 -->
+<div class="card">
+<img src="imagenes/forte-v25.jpg">
+<h3>FORTE V25 – INDUFRIAL</h3>
+<ul>
+<li>Refrigerador vertical – 2 puertas</li>
+<li>Capacidad bruta: 697 litros</li>
+<li>Iluminación LED</li>
+<li>Condensador de bajo mantenimiento</li>
+<li>Gas R-290</li>
+<li>Temperatura: 0°C a 4°C</li>
+<li>Garantía: 2 años</li>
+</ul>
+<p class="precio">Precio a consultar</p>
+<a class="btn" href="https://wa.me/573104291445?text=Hola,%20quiero%20información%20FORTE%20V25">Consultar por WhatsApp</a>
+</div>
 
-        <p class="precio">$9.074.000 contado</p>
+<!-- FORTE V39 -->
+<div class="card">
+<img src="imagenes/forte-v39.jpg">
+<h3>FORTE V39 – INDUFRIAL</h3>
+<ul>
+<li>Refrigerador vertical – 2 puertas</li>
+<li>Capacidad bruta: 1.102 litros</li>
+<li>Condensador 100% cobre</li>
+<li>Iluminación LED</li>
+<li>Gas R-290</li>
+<li>Garantía: 2 años</li>
+</ul>
+<p class="precio">Precio a consultar</p>
+<a class="btn" href="https://wa.me/573104291445?text=Hola,%20quiero%20información%20FORTE%20V39">Consultar por WhatsApp</a>
+</div>
 
-        <a class="btn"
-        href="https://wa.me/573104291445?text=Hola,%20estoy%20interesado%20en%20el%20refrigerador%20FORTE%20V40">
-        Consultar por WhatsApp
-        </a>
-    </div>
+<!-- FORTE V13 -->
+<div class="card">
+<img src="imagenes/forte-v13.jpg">
+<h3>FORTE V13 – INDUFRIAL</h3>
+<ul>
+<li>Refrigerador vertical – 1 puerta</li>
+<li>Capacidad bruta: 340 litros</li>
+<li>Iluminación LED</li>
+<li>Gas R-290</li>
+<li>Garantía: 2 años</li>
+</ul>
+<p class="precio">Precio a consultar</p>
+<a class="btn" href="https://wa.me/573104291445?text=Hola,%20quiero%20información%20FORTE%20V13">Consultar por WhatsApp</a>
+</div>
+
+<!-- FORTE V17 -->
+<div class="card">
+<img src="imagenes/forte-v17.jpg">
+<h3>FORTE V17 – INDUFRIAL</h3>
+<ul>
+<li>Refrigerador vertical – 1 puerta</li>
+<li>Capacidad bruta: 482 litros</li>
+<li>Iluminación LED</li>
+<li>Gas R-290</li>
+<li>Garantía: 2 años</li>
+</ul>
+<p class="precio">Precio a consultar</p>
+<a class="btn" href="https://wa.me/573104291445?text=Hola,%20quiero%20información%20FORTE%20V17">Consultar por WhatsApp</a>
+</div>
+
+<!-- FORTE V20 -->
+<div class="card">
+<img src="imagenes/forte-v20.jpg">
+<h3>FORTE V20 – INDUFRIAL</h3>
+<ul>
+<li>Refrigerador vertical – 1 puerta</li>
+<li>Capacidad bruta: 567 litros</li>
+<li>Iluminación LED</li>
+<li>Gas R-290</li>
+<li>Garantía: 2 años</li>
+</ul>
+<p class="precio">Precio a consultar</p>
+<a class="btn" href="https://wa.me/573104291445?text=Hola,%20quiero%20información%20FORTE%20V20">Consultar por WhatsApp</a>
+</div>
+
 </section>
 
-<!-- MUEBLES -->
-<section id="muebles">
-    <h2>Muebles</h2>
-
-    <div class="card">
-        <h3>Mueble Comercial</h3>
-        <p>Resistente y funcional</p>
-        <p class="precio">Precio a consultar</p>
-
-        <a class="btn"
-        href="https://wa.me/573104291445?text=Hola,%20quiero%20información%20sobre%20muebles%20comerciales">
-        Consultar por WhatsApp
-        </a>
-    </div>
-</section>
-
-<!-- ELECTRODOMÉSTICOS -->
-<section id="electro">
-    <h2>Electrodomésticos</h2>
-
-    <div class="card">
-        <h3>Electrodoméstico</h3>
-        <p>Alta eficiencia</p>
-        <p class="precio">Precio a consultar</p>
-
-        <a class="btn"
-        href="https://wa.me/573104291445?text=Hola,%20quiero%20información%20sobre%20electrodomésticos">
-        Consultar por WhatsApp
-        </a>
-    </div>
-</section>
+<section id="muebles"><h2>Muebles</h2></section>
+<section id="electro"><h2>Electrodomésticos</h2></section>
 
 <script>
 function mostrar(id){
-    document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
-    document.getElementById(id).classList.add('active');
+document.querySelectorAll('section').forEach(s=>s.classList.remove('active'));
+document.getElementById(id).classList.add('active');
+    
 }
 </script>
 
