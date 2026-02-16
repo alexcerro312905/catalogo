@@ -3,8 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Catálogo de Refrigeración</title>
+<title>Catálogo Comercial</title>
 
 <style>
 body{
@@ -31,86 +30,87 @@ header p{
     font-size:16px;
 }
 
+/* BOTONES PRINCIPALES */
+.menu{
+    display:flex;
+    gap:12px;
+    justify-content:center;
+    flex-wrap:wrap;
+    padding:20px;
+    background:#ffffff;
+}
+
+.menu a{
+    text-decoration:none;
+    background:#0b4fa2;
+    color:#fff;
+    padding:12px 18px;
+    border-radius:8px;
+    font-size:15px;
+}
+
 /* CONTENEDOR */
 .container{
-    max-width:1000px;
+    max-width:1100px;
     margin:auto;
     padding:20px;
 }
 
-/* TARJETA PRODUCTO */
+/* SECCIONES */
+.section{
+    margin-top:40px;
+}
+
+.section h2{
+    color:#0b4fa2;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+/* PRODUCTOS */
+.products{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap:20px;
+}
+
 .product{
     background:#fff;
     border-radius:12px;
-    padding:20px;
+    padding:15px;
     box-shadow:0 6px 15px rgba(0,0,0,0.12);
-}
-
-/* TITULO */
-.product h2{
-    color:#0b4fa2;
     text-align:center;
-    margin-bottom:10px;
 }
 
-/* IMAGEN */
 .product img{
-    display:block;
     width:100%;
-    max-width:320px; /* tamaño mediano */
-    margin:15px auto;
+    max-width:240px;
+    margin:auto;
+    display:block;
     border-radius:8px;
 }
 
-/* PRECIO */
-.price{
-    text-align:center;
-    font-size:24px;
-    font-weight:bold;
-    color:#1e7e34;
-    margin:15px 0;
-}
-
-/* SECCIONES */
-.section{
-    margin-top:20px;
-}
-
-.section h3{
+.product h3{
     color:#0b4fa2;
-    margin-bottom:8px;
+    margin:12px 0 5px;
 }
 
-/* LISTAS */
-ul{
-    padding-left:20px;
-    margin:0;
+.price{
+    font-weight:bold;
+    color:#198754;
+    margin:8px 0;
 }
 
-ul li{
-    margin-bottom:6px;
-}
-
-/* BOTONES */
-.buttons{
-    margin-top:25px;
-    display:flex;
-    gap:15px;
-    flex-wrap:wrap;
-    justify-content:center;
-}
-
+/* BOTÓN WHATSAPP */
 .btn{
-    background:#0b4fa2;
-    color:white;
-    text-decoration:none;
-    padding:12px 20px;
-    border-radius:8px;
-    font-size:16px;
-}
-
-.btn.secondary{
+    display:inline-block;
+    margin-top:10px;
     background:#198754;
+    color:#fff;
+    padding:10px 15px;
+    border-radius:8px;
+    text-decoration:none;
+    font-size:14px;
 }
 </style>
 </head>
@@ -118,73 +118,84 @@ ul li{
 <body>
 
 <header>
-    <h1>Catálogo de Refrigeración Comercial</h1>
+    <h1>Catálogo Comercial</h1>
     <p>Asesor: Alex Cerro</p>
 </header>
 
+<!-- BOTONES DE CATEGORÍA -->
+<div class="menu">
+    <a href="#refrigeracion">Refrigeración Comercial</a>
+    <a href="#muebles">Muebles</a>
+    <a href="#electrodomesticos">Electrodomésticos</a>
+</div>
+
 <div class="container">
 
-<div class="product">
+<!-- ================= REFRIGERACIÓN ================= -->
+<div class="section" id="refrigeracion">
+    <h2>Refrigeración Comercial</h2>
 
-    <h2>FORTE V40 – Refrigerador Vertical</h2>
+    <div class="products">
 
-    <!-- IMAGEN -->
-    <img src="imagenes/forte-v40.jpg" alt="FORTE V40">
+        <!-- PRODUCTO 1 -->
+        <div class="product">
+            <img src="imagenes/forte-v40.jpg" alt="FORTE V40">
+            <h3>FORTE V40</h3>
+            <p>Refrigerador vertical – 3 puertas</p>
+            <div class="price">$9.074.000</div>
+            <a class="btn" href="https://wa.me/57XXXXXXXXXX">
+                Consultar por WhatsApp
+            </a>
+        </div>
 
-    <!-- PRECIO -->
-    <div class="price">
-        Precio contado: $9.074.000
+        <!-- PRODUCTO 2 -->
+        <div class="product">
+            <img src="imagenes/vitrina2.jpg" alt="Vitrina Refrigerada">
+            <h3>Vitrina Refrigerada</h3>
+            <p>Ideal para exhibición</p>
+            <div class="price">Precio a consultar</div>
+            <a class="btn" href="https://wa.me/57XXXXXXXXXX">
+                Consultar por WhatsApp
+            </a>
+        </div>
+
     </div>
-
-    <!-- DESCRIPCIÓN -->
-    <div class="section">
-        <h3>Características principales</h3>
-        <ul>
-            <li>Vitrina exhibidora de tres puertas</li>
-            <li>Control digital de temperatura</li>
-            <li>Condensador de lámina con tubería 100% cobre</li>
-            <li>Puertas con doble vidrio templado y gas Argón</li>
-            <li>Iluminación LED interna</li>
-            <li>Rejilla frontal termoformada</li>
-        </ul>
-    </div>
-
-    <!-- ESPECIFICACIONES -->
-    <div class="section">
-        <h3>Especificaciones técnicas</h3>
-        <ul>
-            <li>Capacidad bruta: 1.093 litros</li>
-            <li>Temperatura de trabajo: 0°C a 4°C</li>
-            <li>Gas refrigerante: R-290</li>
-            <li>Potencia del compresor: 1/2 HP</li>
-            <li>Consumo de energía: 195.7 kWh/mes</li>
-            <li>Iluminación: Tecnología LED</li>
-        </ul>
-    </div>
-
-    <!-- USOS -->
-    <div class="section">
-        <h3>Usos recomendados</h3>
-        <ul>
-            <li>Tiendas y supermercados</li>
-            <li>Restaurantes</li>
-            <li>Panaderías</li>
-            <li>Negocios de alimentos y bebidas</li>
-        </ul>
-    </div>
-
-    <!-- BOTONES -->
-    <div class="buttons">
-        <a class="btn" href="https://wa.me/57XXXXXXXXXX">
-            Consultar por WhatsApp
-        </a>
-
-        <a class="btn secondary" href="#">
-            Volver al catálogo
-        </a>
-    </div>
-
 </div>
+
+<!-- ================= MUEBLES ================= -->
+<div class="section" id="muebles">
+    <h2>Muebles</h2>
+
+    <div class="products">
+        <div class="product">
+            <img src="imagenes/mueble1.jpg" alt="Mueble">
+            <h3>Mueble Comercial</h3>
+            <p>Resistente y funcional</p>
+            <div class="price">Precio a consultar</div>
+            <a class="btn" href="https://wa.me/57XXXXXXXXXX">
+                Consultar por WhatsApp
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- ================= ELECTRODOMÉSTICOS ================= -->
+<div class="section" id="electrodomesticos">
+    <h2>Electrodomésticos</h2>
+
+    <div class="products">
+        <div class="product">
+            <img src="imagenes/electro1.jpg" alt="Electrodoméstico">
+            <h3>Electrodoméstico</h3>
+            <p>Alta eficiencia</p>
+            <div class="price">Precio a consultar</div>
+            <a class="btn" href="https://wa.me/57XXXXXXXXXX">
+                Consultar por WhatsApp
+            </a>
+        </div>
+    </div>
+</div>
+
 </div>
 
 </body>
