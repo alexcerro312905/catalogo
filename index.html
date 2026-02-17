@@ -73,11 +73,37 @@ section.active{
     box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
 
+.card img{
+    width:100%;
+    max-width:320px;
+    display:block;
+    margin:auto;
+    border-radius:10px;
+}
+
 .card h3{
     text-align:center;
     color:#0b5ed7;
 }
 
+.precio{
+    text-align:center;
+    color:green;
+    font-size:18px;
+    font-weight:bold;
+}
+
+.btn{
+    display:block;
+    margin:15px auto 0;
+    text-align:center;
+    background:#25D366;
+    color:white;
+    padding:12px;
+    border-radius:8px;
+    text-decoration:none;
+    font-weight:bold;
+}
 </style>
 </head>
 
@@ -96,86 +122,96 @@ section.active{
 
 <!-- REFRIGERACIÓN -->
 <section id="refrigeracion" class="active">
-    <h2>Refrigeración Comercial</h2>
+<h2>Refrigeración Comercial – Vitrina Exhibidora Vertical (INDUFRIAL)</h2>
 
-    <div class="submenu">
-        <button>Vitrina Exhibidora Vertical</button>
-        <button>Congelador / Refrigerador Horizontal</button>
-    </div>
+<!-- FORTE V13 -->
+<div class="card">
+<img src="imagenes/forte-v13.jpg">
+<h3>FORTE V13-RHC</h3>
+<ul>
+<li>1 puerta – Capacidad bruta: 340 L (Útil 258.4 L)</li>
+<li>Dimensiones: 204 × 59.7 × 49.6 cm</li>
+<li>Consumo: 114 kWh/mes · Compresor 1/5 HP · 2.9 A</li>
+<li>Gas R-290 · Temperatura 0°C a 4°C</li>
+<li>Incluye 4 parrillas y 16 ganchos</li>
+</ul>
+<p class="precio">$4.796.000 contado</p>
+</div>
 
-    <div class="card">
-        <h3>FORTE V40</h3>
-        <p>Vitrina exhibidora vertical – 3 puertas</p>
-        <p><b>Precio contado:</b> $9.074.000</p>
-    </div>
+<!-- FORTE V17 -->
+<div class="card">
+<img src="imagenes/forte-v17.jpg">
+<h3>FORTE V17-RHC</h3>
+<ul>
+<li>1 puerta – Capacidad bruta: 482 L</li>
+<li>Consumo: 132 kWh/mes · Compresor 1/3 HP · 4.8 A</li>
+<li>Gas R-290 · Temperatura 0°C a 4°C</li>
+<li>Incluye 4 parrillas y 16 ganchos</li>
+</ul>
+<p class="precio">$5.572.000 contado</p>
+</div>
+
+<!-- FORTE V20 -->
+<div class="card">
+<img src="imagenes/forte-v20.jpg">
+<h3>FORTE V20-RHC</h3>
+<ul>
+<li>1 puerta – Capacidad bruta: 567 L</li>
+<li>Consumo: 126.9 kWh/mes · Compresor 1/3 HP</li>
+<li>Gas R-290 · Temperatura 0°C a 4°C</li>
+<li>Incluye 4 parrillas y 16 ganchos</li>
+</ul>
+<p class="precio">$5.651.000 contado</p>
+</div>
+
+<!-- FORTE V25 -->
+<div class="card">
+<img src="imagenes/forte-v25.jpg">
+<h3>FORTE V25-RHC</h3>
+<ul>
+<li>2 puertas – Capacidad bruta: 697 L</li>
+<li>Consumo: 183 kWh/mes · Compresor 1/3 HP</li>
+<li>Gas R-290 · Temperatura 0°C a 4°C</li>
+<li>Incluye 8 parrillas y 32 ganchos</li>
+</ul>
+<p class="precio">$6.940.000 contado</p>
+</div>
+
+<!-- FORTE V39 -->
+<div class="card">
+<img src="imagenes/forte-v39.jpg">
+<h3>FORTE V39-RHC</h3>
+<ul>
+<li>2 puertas – Capacidad bruta: 1.102 L</li>
+<li>Consumo: 288 kWh/mes · Compresor 1/2 HP</li>
+<li>Gas R-290 · Temperatura 0°C a 4°C</li>
+<li>Incluye 8 parrillas y 32 ganchos</li>
+</ul>
+<p class="precio">$8.776.000 contado</p>
+</div>
+
+<!-- FORTE V40 -->
+<div class="card">
+<img src="imagenes/forte-v40.jpg">
+<h3>FORTE V40</h3>
+<ul>
+<li>3 puertas – Capacidad bruta: 1.093 L</li>
+<li>Consumo: 195.7 kWh/mes · Compresor 1/2 HP</li>
+<li>Condensador 100% cobre · Iluminación LED</li>
+<li>Gas R-290 · Garantía 2 años</li>
+</ul>
+<p class="precio">$9.074.000 contado</p>
+</div>
+
 </section>
 
-<!-- MUEBLES -->
-<section id="muebles">
-    <h2>Muebles</h2>
-
-    <div class="submenu">
-        <button onclick="mostrarSub('comedor')">Juego comedor</button>
-        <button onclick="mostrarSub('sala')">Juegos de sala</button>
-        <button onclick="mostrarSub('alcoba')">Alcobas / Cama</button>
-    </div>
-
-    <div id="comedor" class="card">
-        <h3>Juego Comedor</h3>
-        <p>Mesas y sillas en diferentes estilos y materiales.</p>
-    </div>
-
-    <div id="sala" class="card" style="display:none;">
-        <h3>Juegos de Sala</h3>
-        <p>Sofás, salas modernas y clásicas.</p>
-    </div>
-
-    <div id="alcoba" class="card" style="display:none;">
-        <h3>Alcobas / Camas</h3>
-        <p>Camas, closets y muebles de alcoba.</p>
-    </div>
-</section>
-
-<!-- ELECTRODOMÉSTICOS -->
-<section id="electro">
-    <h2>Electrodomésticos</h2>
-
-    <div class="submenu">
-        <button onclick="mostrarElectro('tv')">Televisores</button>
-        <button onclick="mostrarElectro('lavadora')">Lavadoras</button>
-        <button onclick="mostrarElectro('nevera')">Neveras</button>
-    </div>
-
-    <div id="tv" class="card">
-        <h3>Televisores</h3>
-        <p>Smart TV, LED y UHD.</p>
-    </div>
-
-    <div id="lavadora" class="card" style="display:none;">
-        <h3>Lavadoras</h3>
-        <p>Automáticas y semiautomáticas.</p>
-    </div>
-
-    <div id="nevera" class="card" style="display:none;">
-        <h3>Neveras</h3>
-        <p>Neveras domésticas y comerciales.</p>
-    </div>
-</section>
+<section id="muebles"><h2>Muebles</h2></section>
+<section id="electro"><h2>Electrodomésticos</h2></section>
 
 <script>
 function mostrar(id){
-    document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
-    document.getElementById(id).classList.add('active');
-}
-
-function mostrarSub(id){
-    document.querySelectorAll('#muebles .card').forEach(c => c.style.display = 'none');
-    document.getElementById(id).style.display = 'block';
-}
-
-function mostrarElectro(id){
-    document.querySelectorAll('#electro .card').forEach(c => c.style.display = 'none');
-    document.getElementById(id).style.display = 'block';
+document.querySelectorAll('section').forEach(s=>s.classList.remove('active'));
+document.getElementById(id).classList.add('active');
 }
 </script>
 
