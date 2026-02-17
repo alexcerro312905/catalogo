@@ -39,6 +39,7 @@ nav button{
     justify-content:center;
     gap:10px;
     margin:15px 0;
+    flex-wrap:wrap;
 }
 section{
     display:none;
@@ -104,25 +105,24 @@ section.active{
     <button onclick="mostrar('electro')">Electrodomésticos</button>
 </nav>
 
-<!-- REFRIGERACIÓN -->
+<!-- ================= REFRIGERACIÓN ================= -->
 <section id="refrigeracion" class="active">
-<h2>Refrigeración Comercial – INDUFRIAL</h2>
+<h2>Refrigeración Comercial</h2>
 
 <div class="subnav">
-    <button onclick="mostrarSub('verticales')">Vitrinas Verticales</button>
-    <button onclick="mostrarSub('horizontales')">Refrigeración / Congelador Horizontal</button>
+    <button onclick="mostrarSub('vitrinas')">Vitrina Exhibidora Vertical</button>
+    <button onclick="mostrarSub('horizontales')">Congelador / Refrigerador Horizontal</button>
 </div>
 
-<!-- ================= VITRINAS VERTICALES ================= -->
-<div id="verticales" class="subsection active">
+<!-- ===== VITRINAS VERTICALES ===== -->
+<div id="vitrinas" class="subsection active">
 
 <!-- V13 -->
 <div class="card">
 <img src="imagenes/forte-v13.jpg">
-<h3>FORTE V13-RHC – INDUFRIAL</h3>
+<h3>FORTE V13-RHC</h3>
 <ul>
 <li>Capacidad bruta: 340 L | Útil: 258.4 L</li>
-<li>Puerta batiente Low-E con gas argón</li>
 <li>Consumo: 114 kWh/mes</li>
 <li>Compresor: 1/5 HP | Corriente: 2.9 A</li>
 <li>Temperatura: 0°C a 4°C | Gas R-290</li>
@@ -134,12 +134,11 @@ section.active{
 <!-- V17 -->
 <div class="card">
 <img src="imagenes/forte-v17.jpg">
-<h3>FORTE V17-RHC – INDUFRIAL</h3>
+<h3>FORTE V17-RHC</h3>
 <ul>
 <li>Capacidad bruta: 482 L</li>
 <li>Consumo: 132 kWh/mes</li>
 <li>Compresor: 1/3 HP | Corriente: 4.8 A</li>
-<li>Temperatura: 0°C a 4°C | Gas R-290</li>
 </ul>
 <p class="precio">$5.572.000 contado</p>
 <a class="btn" href="https://wa.me/573104291445?text=Hola,%20estoy%20interesado%20en%20el%20FORTE%20V17">Consultar por WhatsApp</a>
@@ -148,11 +147,11 @@ section.active{
 <!-- V20 -->
 <div class="card">
 <img src="imagenes/forte-v20.jpg">
-<h3>FORTE V20-RHC – INDUFRIAL</h3>
+<h3>FORTE V20-RHC</h3>
 <ul>
 <li>Capacidad bruta: 567 L</li>
 <li>Consumo: 126.9 kWh/mes</li>
-<li>Compresor: 1/3 HP | Corriente: 3.5 A</li>
+<li>Compresor: 1/3 HP</li>
 </ul>
 <p class="precio">$5.651.000 contado</p>
 <a class="btn" href="https://wa.me/573104291445?text=Hola,%20estoy%20interesado%20en%20el%20FORTE%20V20">Consultar por WhatsApp</a>
@@ -161,12 +160,11 @@ section.active{
 <!-- V25 -->
 <div class="card">
 <img src="imagenes/forte-v25.jpg">
-<h3>FORTE V25-RHC – INDUFRIAL</h3>
+<h3>FORTE V25-RHC</h3>
 <ul>
 <li>Capacidad bruta: 697 L</li>
 <li>2 puertas batientes</li>
 <li>Consumo: 183 kWh/mes</li>
-<li>Compresor: 1/3 HP</li>
 </ul>
 <p class="precio">$6.940.000 contado</p>
 <a class="btn" href="https://wa.me/573104291445?text=Hola,%20estoy%20interesado%20en%20el%20FORTE%20V25">Consultar por WhatsApp</a>
@@ -175,7 +173,7 @@ section.active{
 <!-- V39 -->
 <div class="card">
 <img src="imagenes/forte-v39.jpg">
-<h3>FORTE V39-RHC – INDUFRIAL</h3>
+<h3>FORTE V39-RHC</h3>
 <ul>
 <li>Capacidad bruta: 1.102 L</li>
 <li>Consumo: 288 kWh/mes</li>
@@ -188,13 +186,12 @@ section.active{
 <!-- V40 -->
 <div class="card">
 <img src="imagenes/forte-v40.jpg">
-<h3>FORTE V40 – INDUFRIAL</h3>
+<h3>FORTE V40</h3>
 <ul>
 <li>Capacidad bruta: 1.093 L</li>
 <li>3 puertas batientes</li>
 <li>Consumo: 195.7 kWh/mes</li>
 <li>Compresor: 1/2 HP | Corriente: 4.4 A</li>
-<li>Temperatura: 0°C a 4°C</li>
 </ul>
 <p class="precio">$9.074.000 contado</p>
 <a class="btn" href="https://wa.me/573104291445?text=Hola,%20estoy%20interesado%20en%20el%20FORTE%20V40">Consultar por WhatsApp</a>
@@ -202,15 +199,31 @@ section.active{
 
 </div>
 
-<!-- ================= HORIZONTALES ================= -->
 <div id="horizontales" class="subsection">
-<p style="text-align:center;">Aquí irán congeladores y refrigeradores horizontales.</p>
+<p style="text-align:center;">Próximamente congeladores y refrigeradores horizontales.</p>
 </div>
 
 </section>
 
-<section id="muebles"><h2>Muebles</h2></section>
-<section id="electro"><h2>Electrodomésticos</h2></section>
+<!-- ================= MUEBLES ================= -->
+<section id="muebles">
+<h2>Muebles</h2>
+<ul>
+<li>Juego de comedor</li>
+<li>Juegos de sala</li>
+<li>Alcobas / Camas</li>
+</ul>
+</section>
+
+<!-- ================= ELECTRO ================= -->
+<section id="electro">
+<h2>Electrodomésticos</h2>
+<ul>
+<li>Televisores</li>
+<li>Lavadoras</li>
+<li>Neveras</li>
+</ul>
+</section>
 
 <script>
 function mostrar(id){
