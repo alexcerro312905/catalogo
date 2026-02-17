@@ -3,195 +3,181 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Catálogo Comercial | Alex Cerro</title>
+<title>Catálogo Comercial</title>
 
 <style>
-body {
+body{
+    margin:0;
     font-family: Arial, sans-serif;
-    margin: 0;
-    background: #f4f4f4;
+    background:#f2f2f2;
 }
 
-/* HEADER */
-header {
-    background: #0a2a66;
-    color: white;
-    padding: 15px;
-    text-align: center;
+header{
+    background:#0b5ed7;
+    color:white;
+    text-align:center;
+    padding:20px;
 }
 
-header h1 {
-    margin: 5px 0;
+nav{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    padding:15px;
+    background:#ffffff;
+    flex-wrap:wrap;
 }
 
-/* MENU */
-nav {
-    background: #143b8a;
-    padding: 10px;
+nav button{
+    background:#0b5ed7;
+    color:white;
+    border:none;
+    padding:10px 15px;
+    border-radius:8px;
+    font-size:14px;
+    cursor:pointer;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+.submenu{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+    margin:15px 0;
+    flex-wrap:wrap;
 }
 
-nav ul li {
-    padding: 10px;
-    color: white;
-    cursor: pointer;
+.submenu button{
+    background:#198754;
+    color:white;
+    border:none;
+    padding:8px 14px;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:13px;
 }
 
-nav ul li:hover {
-    background: #1d4fb8;
+section{
+    display:none;
+    padding:15px;
 }
 
-.submenu {
-    display: none;
-    background: #2a5fd4;
-    margin-top: 5px;
+section.active{
+    display:block;
 }
 
-.submenu li {
-    padding: 8px 15px;
-    font-size: 14px;
+.card{
+    background:white;
+    border-radius:12px;
+    padding:15px;
+    margin-bottom:20px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* CONTENIDO */
-.container {
-    padding: 15px;
+.card h3{
+    text-align:center;
+    color:#0b5ed7;
 }
 
-.producto {
-    background: white;
-    margin-bottom: 20px;
-    padding: 15px;
-    border-radius: 6px;
-}
-
-.producto img {
-    width: 100%;
-    max-width: 300px;
-    display: block;
-    margin: auto;
-}
-
-.producto h2 {
-    color: #0a2a66;
-}
-
-.precio {
-    color: green;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-/* BOTONES */
-.botones {
-    margin-top: 10px;
-}
-
-.botones a {
-    display: inline-block;
-    margin: 5px 5px 0 0;
-    padding: 10px 15px;
-    background: #25D366;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 14px;
-}
-
-.botones a.llamar {
-    background: #0a2a66;
-}
 </style>
-
-<script>
-function toggleSubmenu(id) {
-    const menu = document.getElementById(id);
-    menu.style.display = menu.style.display === "block" ? "none" : "block";
-}
-</script>
 </head>
 
 <body>
 
 <header>
     <h1>Catálogo Comercial</h1>
-    <p>Asesor: <strong>Alex Cerro</strong></p>
+    <p>Asesor: Alex Cerro</p>
 </header>
 
 <nav>
-<ul>
-    <li onclick="toggleSubmenu('refrigeracion')">❄ Refrigeración Comercial</li>
-    <ul id="refrigeracion" class="submenu">
-        <li>Vitrina Exhibidora Vertical</li>
-        <li>Congelador / Refrigerador Horizontal</li>
-    </ul>
-
-    <li>Muebles
-        <ul class="submenu" style="display:block">
-            <li>Juego comedor</li>
-            <li>Juegos de sala</li>
-            <li>Alcobas / Camas</li>
-        </ul>
-    </li>
-
-    <li>Electrodomésticos
-        <ul class="submenu" style="display:block">
-            <li>Televisores</li>
-            <li>Lavadoras</li>
-            <li>Neveras</li>
-        </ul>
-    </li>
-</ul>
+    <button onclick="mostrar('refrigeracion')">Refrigeración Comercial</button>
+    <button onclick="mostrar('muebles')">Muebles</button>
+    <button onclick="mostrar('electro')">Electrodomésticos</button>
 </nav>
 
-<div class="container">
+<!-- REFRIGERACIÓN -->
+<section id="refrigeracion" class="active">
+    <h2>Refrigeración Comercial</h2>
 
-<!-- PRODUCTO -->
-<div class="producto">
-    <h2>FORTE V40 – Vitrina Exhibidora Vertical</h2>
-
-    <img src="v40.jpg" alt="FORTE V40">
-
-    <p class="precio">$ 9.074.000</p>
-
-    <p><strong>Capacidad bruta:</strong> 1.093 L</p>
-    <p><strong>Dimensiones:</strong> 205.4 cm alto (aprox.)</p>
-
-    <h4>Características</h4>
-    <ul>
-        <li>3 puertas batientes</li>
-        <li>Iluminación LED</li>
-        <li>Condensador laminilla 100% cobre</li>
-        <li>Puertas de alta eficiencia</li>
-        <li>Aire forzado</li>
-        <li>Gas ecológico R-290</li>
-        <li>Garantía 2 años</li>
-    </ul>
-
-    <h4>Sistema Eléctrico</h4>
-    <ul>
-        <li>Consumo: 195.7 kWh/mes</li>
-        <li>Compresor: 1/2 HP</li>
-        <li>Corriente: 4.4 A</li>
-        <li>Voltaje: 110V / 60Hz</li>
-    </ul>
-
-    <div class="botones">
-        <a href="https://wa.me/573104291445?text=Hola%20Alex,%20estoy%20interesado%20en%20la%20vitrina%20FORTE%20V40" target="_blank">
-            WhatsApp
-        </a>
-
-        <a class="llamar" href="tel:3104291445">
-            Llamar
-        </a>
+    <div class="submenu">
+        <button>Vitrina Exhibidora Vertical</button>
+        <button>Congelador / Refrigerador Horizontal</button>
     </div>
-</div>
 
-</div>
+    <div class="card">
+        <h3>FORTE V40</h3>
+        <p>Vitrina exhibidora vertical – 3 puertas</p>
+        <p><b>Precio contado:</b> $9.074.000</p>
+    </div>
+</section>
+
+<!-- MUEBLES -->
+<section id="muebles">
+    <h2>Muebles</h2>
+
+    <div class="submenu">
+        <button onclick="mostrarSub('comedor')">Juego comedor</button>
+        <button onclick="mostrarSub('sala')">Juegos de sala</button>
+        <button onclick="mostrarSub('alcoba')">Alcobas / Cama</button>
+    </div>
+
+    <div id="comedor" class="card">
+        <h3>Juego Comedor</h3>
+        <p>Mesas y sillas en diferentes estilos y materiales.</p>
+    </div>
+
+    <div id="sala" class="card" style="display:none;">
+        <h3>Juegos de Sala</h3>
+        <p>Sofás, salas modernas y clásicas.</p>
+    </div>
+
+    <div id="alcoba" class="card" style="display:none;">
+        <h3>Alcobas / Camas</h3>
+        <p>Camas, closets y muebles de alcoba.</p>
+    </div>
+</section>
+
+<!-- ELECTRODOMÉSTICOS -->
+<section id="electro">
+    <h2>Electrodomésticos</h2>
+
+    <div class="submenu">
+        <button onclick="mostrarElectro('tv')">Televisores</button>
+        <button onclick="mostrarElectro('lavadora')">Lavadoras</button>
+        <button onclick="mostrarElectro('nevera')">Neveras</button>
+    </div>
+
+    <div id="tv" class="card">
+        <h3>Televisores</h3>
+        <p>Smart TV, LED y UHD.</p>
+    </div>
+
+    <div id="lavadora" class="card" style="display:none;">
+        <h3>Lavadoras</h3>
+        <p>Automáticas y semiautomáticas.</p>
+    </div>
+
+    <div id="nevera" class="card" style="display:none;">
+        <h3>Neveras</h3>
+        <p>Neveras domésticas y comerciales.</p>
+    </div>
+</section>
+
+<script>
+function mostrar(id){
+    document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+}
+
+function mostrarSub(id){
+    document.querySelectorAll('#muebles .card').forEach(c => c.style.display = 'none');
+    document.getElementById(id).style.display = 'block';
+}
+
+function mostrarElectro(id){
+    document.querySelectorAll('#electro .card').forEach(c => c.style.display = 'none');
+    document.getElementById(id).style.display = 'block';
+}
+</script>
 
 </body>
 </html>
